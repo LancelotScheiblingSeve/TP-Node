@@ -42,3 +42,8 @@ formSearch.addEventListener('submit', event => {
                     </div>`;
     });
 });
+
+results.addEventListener('click', event => {
+    if(!event.target || !event.target.matches('#previsions')) return;
+    alert()
+})
