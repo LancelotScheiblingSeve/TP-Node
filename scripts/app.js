@@ -45,5 +45,10 @@ formSearch.addEventListener('submit', event => {
 
 results.addEventListener('click', event => {
     if(!event.target || !event.target.matches('#previsions')) return;
-    alert()
+    
+    event.preventDefault();
+
+    const cityId = event.target.dataset.cityId;
+
+    WeatherServise.getForecastById(cityId).then(console.log);
 })
